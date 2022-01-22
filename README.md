@@ -1,4 +1,4 @@
-# OmegaT plugin development skeleton
+# OmegaT plugin development skeleton for glossary GUI renderer
 
 ## How to get skeleton into your project
 
@@ -25,14 +25,14 @@ Here is a hint for modifications.
 
 ## Build system
 
-This skeleton use a Gradle build system as same as OmegaT version 4.3.0 and later.
+This skeleton use a Gradle build system.
 
 ## Dependency
 
 OmegaT and dependencies are located on remote maven repositories.
 It is necessary to connect the internet to compile your project.
 
-Current skeleton example refers OmegaT 5.2.0.
+Current skeleton example refers OmegaT 5.7.0.
 
 All complex configurations to refer OmegaT core are handled by
 `gradle-omegat-plugin`.

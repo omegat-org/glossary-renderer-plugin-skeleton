@@ -1,1 +1,1 @@
-rootProject.name = "plugin-skeleton"
+rootProject.name = "glossary-renderer-plugin-skeleton"
