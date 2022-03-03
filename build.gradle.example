@@ -1,3 +1,5 @@
+# When you want to use Gradle GroovyDSL, please remove build.gradle.kts and rename this to build.gradle
+
 plugins {
     id('java')
     id('jacoco')
@@ -11,8 +13,8 @@ plugins {
 version = '0.1'
 
 omegat {
-    version = "5.7.0"
-    pluginClass = "org.omegat.filters2.text.dokuwiki.DokuWikiFilter"
+    version = project.property('targetOmegatVersion')
+    pluginClass = project.property('mainClass')
 }
 
 dependencies {

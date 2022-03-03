@@ -9,8 +9,8 @@ plugins {
 version = "0.0.1"
 
 omegat {
-    version = "5.7.0"
-    pluginClass = "org.omegat.gui.glossary.CustomGlossaryRenderer"
+    version = project.property("targetOmegatVersion").toString()
+    pluginClass = project.property("mainClass").toString()
 }
 
 dependencies {

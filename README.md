@@ -17,11 +17,22 @@ When you prefer Groovy DSL, please rename `build.gradle.disabled` to `build.grad
 Here is a hint for modifications.
 
 - Source code: `src/main/<lang>/*`
-- Test code: `src/test/<lang>/*` and `src/test/resources/*`
+- Properties: class name, description, title, website and category
 - Project.name in `settings.gradle`
-- Properties: description, title, website and category
-- Plugin Main class name in `build.gradle.kts`.
-- Coding rules: `config/checkstyle/checkstyle.xml`
+- Test code: `src/test/<lang>/*` and `src/test/resources/*`
+
+You should modify `gradle.properties` values
+```properties
+plugin.name=Custom glossary renderer
+plugin.category=glossary
+plugin.link=https://github.com/omegat-org/glossay-renderer-plugin-skeleton
+plugin.author=OmegaT team
+plugin.description=Sample project for development
+plugin.license=GNU General Public License version 3
+targetOmegatVersion=5.7.0
+mainClass="org.omegat.gui.glossary.CustomGlossaryRenderer"  # should be same as your class
+```
+
 
 ## Build system
 
