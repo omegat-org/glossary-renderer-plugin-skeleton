@@ -23,6 +23,13 @@ Here is a hint for modifications.
 - Plugin Main class name in `build.gradle.kts`.
 - Coding rules: `config/checkstyle/checkstyle.xml`
 
+```
+omegat {
+    version = "5.7.0"
+    pluginClass = "org.omegat.gui.glossary.CustomGlossaryRenderer"  # change here
+}
+```
+
 ## Build system
 
 This skeleton use a Gradle build system.
